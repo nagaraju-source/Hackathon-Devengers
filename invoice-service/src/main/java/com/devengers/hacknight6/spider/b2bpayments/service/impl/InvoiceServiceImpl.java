@@ -19,6 +19,7 @@ public class InvoiceServiceImpl implements IInvoiceService {
 
     @Override
     public List<Invoice> getInvoiceInfo() {
+
         return invoiceRepository.findAll();
     }
 
