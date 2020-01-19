@@ -6,7 +6,7 @@ import com.devengers.hacknight6.spider.b2bpayments.modal.Product;
 import java.util.List;
 
 
-public interface IAdminService {
+public interface IProductService {
 
     public List<Product> getProductList();
 }

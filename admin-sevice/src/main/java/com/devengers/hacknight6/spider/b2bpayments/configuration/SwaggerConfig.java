@@ -24,14 +24,14 @@ public class SwaggerConfig {
     }
 
     private Predicate<String> postPaths() {
-        return or(regex("/v1/adminservice.*"), regex("/v1/adminservice.*"));
+        return or(regex("/v1/productservice.*"), regex("/v1/productservice.*"));
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Admin Service API")
-                .description("Admin Service API is used for fetch the list of products")
+        return new ApiInfoBuilder().title("Product Service API")
+                .description("Product Service API is used for fetch the list of products")
                 .termsOfServiceUrl("http://localhost:2020/")
-                .contact("javafullstackdeveloper75@gmail.com").license("Admin Service License")
+                .contact("javafullstackdeveloper75@gmail.com").license("Product Service License")
                 .licenseUrl("javafullstackdeveloper75@gmail.com").version("1.0").build();
     }
 
